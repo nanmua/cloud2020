@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <!-- 配置mysql jar包绝对路径 -->
+  <classPathEntry
+    location="C:\Users\Administrator\.m2\repository\mysql\mysql-connector-java\5.1.43\mysql-connector-java-5.1.43.jar"/>
+  <context id="context1">
+    <!-- 引入插件 -->
+    <commentGenerator type="com.demo.springcloud.plugin.MyCommentGenerator"/>
+    <!-- 配置完成后请使用 MybatisGeneratorMain.java 执行main方法生成代码 执行完成后不要提交这个文件 -->
+    <!-- 配置完成后请使用 MybatisGeneratorMain.java 执行main方法生成代码 执行完成后不要提交这个文件 -->
+    <!-- 配置完成后请使用 MybatisGeneratorMain.java 执行main方法生成代码 执行完成后不要提交这个文件 -->
+
+    <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
+    <jdbcConnection
+      connectionURL="jdbc:mysql://localhost:3306/db2020?characterEncoding=UTF-8"
+      driverClass="com.mysql.jdbc.Driver" password="root" userId="root">
+      <property name="remarks" value="true"/>
+      <property name="useInformationSchema" value="true"/>
+    </jdbcConnection>
+    <!-- model存放目录 -->
+    <javaModelGenerator targetPackage="com.demo.springcloud.entity"
+      targetProject="E:\wwwwww\git\cloud2020\cloud-api-commons\src\main\java">
+      <property name="trimStrings" value="true"/>
+    </javaModelGenerator>
+    <!-- mapper xml存放目录 -->
+    <sqlMapGenerator targetPackage="mapper"
+      targetProject="E:\wwwwww\git\cloud2020\cloud-api-commons\src\main\resources"/>
+    <!-- 生成DAO的类文件以及配置文件 -->
+    <javaClientGenerator targetPackage="com.demo.springcloud.dao"
+      targetProject="E:\wwwwww\git\cloud2020\cloud-api-commons\src\main\java" type="XMLMAPPER"/>
+    <!-- 配置完成后请使用 MybatisGeneratorMain.java 执行main方法生成代码 执行完成后不要提交这个文件 -->
+
+    <!--<table tableName="payment" domainObjectName="Payment"-->
+      <!--enableInsert="true" enableDeleteByPrimaryKey="true" enableSelectByPrimaryKey="true"-->
+      <!--enableUpdateByPrimaryKey="true" enableSelectByExample="true" enableDeleteByExample="false"-->
+      <!--enableUpdateByExample="false" enableCountByExample="false">-->
+    <!--</table>-->
+
+  </context>
+</generatorConfiguration>

@@ -1,0 +1,12 @@
+com\demo\springcloud\entity\Payment$PaymentBuilder.class
+com\demo\springcloud\plugin\MyCommentGenerator.class
+com\demo\springcloud\enu\ResultCodeEnum.class
+com\demo\springcloud\entity\PaymentExample$GeneratedCriteria.class
+com\demo\springcloud\common\ApiReturnInfo.class
+com\demo\springcloud\entity\PaymentExample$Criteria.class
+com\demo\springcloud\entity\Payment.class
+com\demo\springcloud\entity\PaymentExample$Criterion.class
+com\demo\springcloud\plugin\MybatisGeneratorMain.class
+com\demo\springcloud\dao\PaymentMapper.class
+com\demo\springcloud\entity\PaymentExample.class
+com\demo\springcloud\common\ApiReturnInfo$ApiReturnInfoBuilder.class
